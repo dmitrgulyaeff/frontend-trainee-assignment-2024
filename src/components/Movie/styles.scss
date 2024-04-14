@@ -1,0 +1,20 @@
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:focus {
+  font-size: 2rem;
+  left: 10px;
+  z-index: 2;
+  color: rgba(22, 119, 255, 0.3);
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:focus {
+  font-size: 2rem;
+  right: 10px;
+  z-index: 2;
+  color: rgba(22, 119, 255, 0.3);
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  color: rgba(22, 119, 255, 0.5);
+}
