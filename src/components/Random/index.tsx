@@ -1,4 +1,4 @@
-import { countryNames, movieGenres } from '@src/constants';
+import { countryNames, movieGenres, networkNames } from '@src/constants';
 import { findRandomMovie } from '@src/lib/api/client';
 import { Button, Form, notification, Select, Slider, Switch } from 'antd';
 import Title from 'antd/es/typography/Title';
@@ -12,6 +12,7 @@ export type TFilterIValues = {
   'countries.name': string[];
   isSeries: boolean;
   'genres.name': string[];
+  'networks.items.name': string[]
 };
 
 const initialValues: TFilterIValues = {
@@ -21,6 +22,7 @@ const initialValues: TFilterIValues = {
   'countries.name': [],
   isSeries: false,
   'genres.name': [],
+  'networks.items.name': []
 };
 
 export function RandomMovieSearch() {
@@ -141,7 +143,7 @@ export function RandomMovieSearch() {
         </Form.Item>
         <Form.Item name='networks.items.name' label='Cети производства'>
           <Select mode='multiple' placeholder='Выберите сети'>
-            {['HBO', 'Netflix', 'Amazon'].map((option) => (
+            {networkNames.map((option) => (
               <Select.Option key={option} value={option}>
                 {option}
               </Select.Option>

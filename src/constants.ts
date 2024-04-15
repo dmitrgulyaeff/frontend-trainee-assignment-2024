@@ -129,7 +129,7 @@ export const possibleGenres = [
   },
 ];
 
-export const movieGenres = possibleGenres.map(({name}) => name)
+export const movieGenres = possibleGenres.map(({ name }) => name);
 const possibleCountries = [
   {
     name: 'Австралия',
@@ -1088,6 +1088,73 @@ const possibleCountries = [
 export const countryNames = possibleCountries.map(({ name }) => name);
 
 const countriesSet = new Set(countryNames);
+
+export const possibleNetworksItemsName = [
+  {
+    result: 'AMC',
+  },
+  {
+    result: 'Acorn TV',
+  },
+  {
+    result: 'Amazon Prime Video',
+  },
+  {
+    result: 'Apple TV+',
+  },
+  {
+    result: 'BritBox',
+  },
+  {
+    result: 'Crunchyroll',
+  },
+  {
+    result: 'DC Universe',
+  },
+  {
+    result: 'Disney+',
+  },
+  {
+    result: 'FX',
+  },
+  {
+    result: 'HBO',
+  },
+  {
+    result: 'Hulu',
+  },
+  {
+    result: 'KION',
+  },
+  {
+    result: 'MEGOGO',
+  },
+  {
+    result: 'Max',
+  },
+  {
+    result: 'Netflix',
+  },
+  {
+    result: 'Okko',
+  },
+  {
+    result: 'Paramount+',
+  },
+  {
+    result: 'Peacock',
+  },
+  {
+    result: 'Premier',
+  },
+  {
+    result: 'Roku Channel',
+  },
+];
+
+export const networkNames = possibleNetworksItemsName.map(
+  ({ result }) => result,
+);
 
 export const isCountry = (str: string) =>
   countriesSet.has(str.replace(/^!/, ''));
