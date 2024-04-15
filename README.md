@@ -43,7 +43,7 @@ http://localhost:7070/
 docker build -t moviepoisk .
 ```
 
-### Запуска контейнера с токеном
+### Запуск контейнера с токеном
 
 ```bash
 docker run -e TOKEN="<your api token>" -p 3000:3000 moviepoisk
